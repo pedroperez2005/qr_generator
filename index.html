@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador y Lector QR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h2>QR Generator & Scanner</h2>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h3>Generar Código QR</h3>
+      <div class="button-card">
+        <input type="text" id="text" placeholder="Escribe texto o URL">
+        <button id="generateBtn">Generar QR</button>
+      </div>
+      <div id="qrcode"></div>
+    </div>
+
+    <div class="card">
+      <h3>Escanear Código QR</h3>
+      <div class="button-card">
+        <button id="scanBtn">Iniciar Cámara</button>
+      </div>
+      <div id="reader"></div>
+      <div class="result" id="result"></div>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
